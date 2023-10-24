@@ -1,0 +1,107 @@
+.todo-list-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-list-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .todo-input-container {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .todo-input-container input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .todo-input-container button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-input-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .todo-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-items li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .remove-button {
+    padding: 6px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-button:hover {
+    background-color: #c82333;
+  }
+  
+  .todo-list-container.bright-mode {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .todo-list-container.night-mode {
+    background-color: #333;
+    color: #333;
+  }
+  
+  .night-mode h2 {
+    color: #fff;
+  }
+  
+  .mode-toggle {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .mode-toggle button {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .mode-toggle button .icon {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .night-mode .icon {
+    color: #fdb813;
+  }
